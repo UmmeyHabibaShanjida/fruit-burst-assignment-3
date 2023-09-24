@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Burst</title>
+  <!-- tailwind and daisy Ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/ab64f8d50b.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  .font-lato{
+    font-family: 'Lato', sans-serif;
+  }
+</style>
+
+<body class="font-lato">
+  <!-- header section -->
+  <header>
+    <!-- nav section -->
+    <div class="navbar flex justify-around mt-8 ml-56 lg:w-9/12 bg-red-400 rounded-full">
+      <div>
+        <a class=" normal-case text-white text-lg font-medium">
+          <ul class="flex gap-10">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Shop</li>
+            <li>All Fruits</li>
+          </ul>
+        </a>
+      </div>
+      <div class=" text-white gap-3 text-5xl font-bold">
+        <img src="/images/logo.png " />
+        <h2>Fruits Burst</h2>
+      </div>
+      <div>
+        <div class="form-control w-96">
+          <input type="text" placeholder="Search here" class="input input-bordered  md:w-auto rounded-full" />
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- main section -->
+  <main>
+    <!-- slider and carousel -->
+      <div class="carousel ml-56 lg:h-[600px] lg:w-9/12 mt-14">
+        <!-- slider-1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <div class=" text-center space-y-7 text-white">
+              <h2 class="font-extrabold lg:text-7xl">
+                Exotic tastes at your 
+                <br>
+                doorstep
+              </h2>
+              <p class="text-xl font-medium">We supply highly quality organic products</p>
+              <button class="btn font-extrabold text-xl bg-red-400 border-none text-white">
+                Shop Now
+              </button>
+            </div>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- slider-2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <div class=" text-center space-y-7 text-white">
+              <h2 class="font-extrabold lg:text-7xl">
+                Exotic tastes at your 
+                <br>
+                doorstep
+              </h2>
+              <p class="text-xl font-medium">We supply highly quality organic products</p>
+              <button class="btn font-extrabold text-xl bg-red-400 border-none text-white">
+                Shop Now
+              </button>
+            </div> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- slider-3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <div class=" text-center space-y-7 text-white">
+              <h2 class="font-extrabold lg:text-7xl">
+                Exotic tastes at your 
+                <br>
+                doorstep
+              </h2>
+              <p class="text-xl font-medium">We supply highly quality organic products</p>
+              <button class="btn font-extrabold text-xl bg-red-400 border-none text-white">
+                Shop Now
+              </button>
+            </div> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- slider-4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <div class=" text-center space-y-7 text-white">
+              <h2 class="font-extrabold lg:text-7xl">
+                Exotic tastes at your 
+                <br>
+                doorstep
+              </h2>
+              <p class="text-xl font-medium">We supply highly quality organic products</p>
+              <button class="btn font-extrabold text-xl bg-red-400 border-none text-white">
+                Shop Now
+              </button>
+            </div>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div> 
+      <!-- deal of the day section -->
+      <section>
+        <div class="flex justify-around mt-24 mr-8">
+          <div class="space-y-5">
+            <h2 class="font-extrabold text-5xl">Deal of the day</h2>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>:
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>:
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>:
+              </span>
+              minutes
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:9;"></span>
+              </span>
+              seconds
+            </div>
+          </div>
+        </div>
+        <!-- card section -->
+      </section>
+  </main>
+  <!-- footer section -->
+  <footer>
+
+  </footer>
+</body>
+
+</html>
